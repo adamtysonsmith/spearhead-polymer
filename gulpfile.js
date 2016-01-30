@@ -1,8 +1,9 @@
 var gulp   = require('gulp');
 var jade   = require('gulp-jade');
 var sass   = require('gulp-sass');
-var concat = require('gulp-concat');
 var del    = require('del');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 
 var paths = {
   headScripts: [
@@ -11,7 +12,7 @@ var paths = {
   bodyScripts: [
     './public/js/*.js'
   ],
-  stylesheets: [
+  mainStyles: [
     './public/sass/main.scss'
   ],
   polymerLib: [
@@ -21,15 +22,20 @@ var paths = {
   ],
   polymerComponents: [
     './elements/*/*.jade'
+  ],
+  componentStyles: [
+    './elements/*/*.scss'
   ]
 }
 
+// Clean up old files hanging around
 gulp.task('clean', function() {
   return del(['./public/build']);
 });
 
-gulp.task('styles', function() {
-  gulp.src(paths.stylesheets)
+// Main Styles and Scripts
+gulp.task('main-styles', function() {
+  gulp.src(paths.mainStyles)
   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(concat('styles.css'))
   .pipe(gulp.dest('./public/build'));
@@ -47,6 +53,7 @@ gulp.task('body-scripts', function() {
   .pipe(gulp.dest('./public/build'));
 });
 
+// Polymer Stuff
 gulp.task('polymer', function() {
   gulp.src(paths.polymerLib)
   .pipe(gulp.dest('./public/build'));
@@ -59,11 +66,21 @@ gulp.task('polymer-components', function() {
   .pipe(gulp.dest('./public/build'));
 });
 
+gulp.task('component-styles', function() {
+  gulp.src(paths.componentStyles)
+  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+  .pipe(rename(function(path) {
+    return path;
+  }))
+  .pipe(gulp.dest('./elements'));
+});
+
 gulp.task('default', [
   'clean',
-  'styles',
+  'main-styles',
   'head-scripts',
   'body-scripts',
   'polymer',
-  'polymer-components'
+  'polymer-components',
+  'component-styles'
 ]);
