@@ -1,0 +1,22 @@
+{
+  "name": "spearhead-polymer",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "adamtysonsmith <atsmith227@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}

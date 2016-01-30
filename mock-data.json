@@ -1,0 +1,581 @@
+[
+  {
+	"_id" : "56157b28d4f6a7210b7d73fa",
+	"user_id" : "55e8d8ceeab84d7b11958825",
+	"name" : "New Project",
+	"startDate" : "2015-07-01",
+	"dueDate" : "2015-11-30",
+	"stages" : [
+		{
+			"name" : "Initial Stage",
+			"_id" : "56157b28d4f6a7210b7d73fb",
+			"tasks" : [
+				{
+					"content" : "This is your first task",
+					"_id" : "56157b28d4f6a7210b7d73fc",
+					"notes" : [
+						{
+							"content" : "Move the model to the first child also",
+							"_id" : "561a9558597bd7a10355419d",
+							"timestamp" : "2015-10-11T16:59:04.848Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-10-07T20:06:00.127Z"
+				},
+				{
+					"content" : "New tasks here",
+					"_id" : "56157c53d4f6a7210b7d73fd",
+					"notes" : [
+						{
+							"content" : "Notes",
+							"_id" : "56157c65d4f6a7210b7d73ff",
+							"timestamp" : "2015-10-07T20:11:17.182Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 2,
+					"timestamp" : "2015-10-07T20:10:59.284Z"
+				},
+				{
+					"content" : "Anotha one",
+					"_id" : "561dc4e0bc43d12f0e7efbd0",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 1,
+					"timestamp" : "2015-10-14T02:58:40.243Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-10-07T20:06:00.123Z"
+		},
+		{
+			"name" : "New Stage",
+			"_id" : "56157c5fd4f6a7210b7d73fe",
+			"tasks" : [
+				{
+					"content" : "A new Task",
+					"_id" : "56196ebb3b5751f20bfb7516",
+					"notes" : [
+						{
+							"content" : "And note",
+							"_id" : "56196ebf3b5751f20bfb7517",
+							"timestamp" : "2015-10-10T20:02:07.237Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 1.5,
+					"timestamp" : "2015-10-10T20:02:03.081Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-10-07T20:11:11.966Z"
+		},
+		{
+			"name" : "New Stage again",
+			"_id" : "561dd84da34e183d12ccfe11",
+			"tasks" : [ ],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-10-14T04:21:33.762Z"
+		}
+	],
+	"isDeferred" : false,
+	"isCompleted" : false,
+	"isAbandoned" : false,
+	"timestamp" : "2015-10-07T20:06:00.095Z",
+	"__v" : 21
+},
+{
+	"_id" : "5621148e56b48b3604825191",
+	"user_id" : "55e8d8ceeab84d7b11958825",
+	"name" : "New Project",
+	"startDate" : "2015-10-16",
+	"dueDate" : "2015-10-31",
+	"stages" : [
+		{
+			"name" : "Initial Stage",
+			"_id" : "5621148e56b48b3604825192",
+			"tasks" : [
+				{
+					"content" : "This is your first task",
+					"_id" : "5621148e56b48b3604825193",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-10-16T15:15:26.653Z"
+				},
+				{
+					"content" : "More tasks",
+					"_id" : "562114ca56b48b3604825196",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 3,
+					"timestamp" : "2015-10-16T15:16:26.935Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-10-16T15:15:26.652Z"
+		},
+		{
+			"name" : "Next phase",
+			"_id" : "562114b756b48b3604825194",
+			"tasks" : [ ],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-10-16T15:16:07.218Z"
+		}
+	],
+	"isDeferred" : false,
+	"isCompleted" : false,
+	"isAbandoned" : false,
+	"timestamp" : "2015-10-16T15:15:26.634Z",
+	"__v" : 5
+},
+{
+	"_id" : "55fb5f1bbfdfed3a29413851",
+	"user_id" : "55e8d8ceeab84d7b11958825",
+	"name" : "For all the marbles",
+	"startDate" : "2015-09-17",
+	"dueDate" : "2015-09-24",
+	"stages" : [
+		{
+			"name" : "Initial Stage",
+			"_id" : "55fb5f1bbfdfed3a29413852",
+			"tasks" : [
+				{
+					"content" : "This is your first task",
+					"_id" : "55fb5f1bbfdfed3a29413853",
+					"notes" : [
+						{
+							"content" : "Note",
+							"_id" : "56042828bebf156a18c86995",
+							"timestamp" : "2015-09-24T16:43:20.509Z"
+						},
+						{
+							"content" : "Moar notes",
+							"_id" : "5605a08ea2fd5e7b09ff55fb",
+							"timestamp" : "2015-09-25T19:29:18.668Z"
+						},
+						{
+							"content" : "MOOOOOORE",
+							"_id" : "5605a092a2fd5e7b09ff55fc",
+							"timestamp" : "2015-09-25T19:29:22.474Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T00:47:23.048Z"
+				},
+				{
+					"content" : "Some task",
+					"_id" : "55fb5f2abfdfed3a29413855",
+					"notes" : [
+						{
+							"content" : "Some note",
+							"_id" : "55fb5f2ebfdfed3a29413856",
+							"timestamp" : "2015-09-18T00:47:42.891Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T00:47:38.064Z"
+				},
+				{
+					"content" : "Maybe?",
+					"_id" : "55fb79072a5fe34b608fd86a",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:37:59.500Z"
+				},
+				{
+					"content" : "YO! Make more memes",
+					"_id" : "5605a23f9edf86b30a2696a0",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 4.5,
+					"timestamp" : "2015-09-25T19:36:31.632Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-18T00:47:23.046Z"
+		},
+		{
+			"name" : "Nice!",
+			"_id" : "55fb5f24bfdfed3a29413854",
+			"tasks" : [ ],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-18T00:47:32.366Z"
+		}
+	],
+	"isDeferred" : false,
+	"isCompleted" : false,
+	"isAbandoned" : false,
+	"timestamp" : "2015-09-18T00:47:23.022Z",
+	"__v" : 9
+},
+{
+	"_id" : "55ef505c6f3e9c490dabcd40",
+	"user_id" : "55e8d8ceeab84d7b11958825",
+	"name" : "First Project",
+	"startDate" : "2015-09-08",
+	"dueDate" : "2015-09-15",
+	"stages" : [
+		{
+			"name" : "Initial Stage",
+			"_id" : "55ef505c6f3e9c490dabcd41",
+			"tasks" : [
+				{
+					"content" : "Yep",
+					"_id" : "55ef50606f3e9c490dabcd43",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-08T21:17:20.952Z"
+				},
+				{
+					"content" : "Yay!",
+					"_id" : "55ef51b52094d09e0d254461",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-08T21:23:01.789Z"
+				},
+				{
+					"content" : "Run it!",
+					"_id" : "55fb41f774bcd55108377be6",
+					"notes" : [
+						{
+							"content" : "Yayaya boi",
+							"_id" : "55fb41ff74bcd55108377be7",
+							"timestamp" : "2015-09-17T22:43:11.209Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-17T22:43:03.375Z"
+				},
+				{
+					"content" : "Snowing anyday now",
+					"_id" : "55fb75a08634a45159a9305b",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:23:28.738Z"
+				},
+				{
+					"content" : "Awesome dude",
+					"_id" : "55fb75cc358809175a93e473",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:24:12.341Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-08T21:17:16.404Z"
+		},
+		{
+			"name" : "Another stage",
+			"_id" : "55f60369a0b3d22128b3b1ca",
+			"tasks" : [
+				{
+					"content" : "Anotha one",
+					"_id" : "55fb422674bcd55108377be8",
+					"notes" : [
+						{
+							"content" : "A note, to document things my dear",
+							"_id" : "5605ae109edf86b30a2696a2",
+							"timestamp" : "2015-09-25T20:26:56.835Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-17T22:43:50.700Z"
+				},
+				{
+					"content" : "Ok cool",
+					"_id" : "55fb50bd2810c3d71a8ac4df",
+					"notes" : [
+						{
+							"content" : "Yay",
+							"_id" : "55fb50c02810c3d71a8ac4e0",
+							"timestamp" : "2015-09-17T23:46:08.782Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-17T23:46:05.465Z"
+				},
+				{
+					"content" : "REaaaaaallllllly long long long long long long tasky task",
+					"_id" : "5605aa689edf86b30a2696a1",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 2.5,
+					"timestamp" : "2015-09-25T20:11:20.244Z"
+				},
+				{
+					"content" : "jkdsafklajdsfdas",
+					"_id" : "560c6f5823b5cd9c0e0f76b2",
+					"notes" : [
+						{
+							"content" : "ldfjgadls;fas",
+							"_id" : "560c6f5b23b5cd9c0e0f76b3",
+							"timestamp" : "2015-09-30T23:25:16.003Z"
+						}
+					],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 1.5,
+					"timestamp" : "2015-09-30T23:25:12.163Z"
+				},
+				{
+					"content" : "jkhjlh",
+					"_id" : "560c6fa023b5cd9c0e0f76b4",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 4.5,
+					"timestamp" : "2015-09-30T23:26:24.112Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-13T23:14:49.877Z"
+		},
+		{
+			"name" : "Something",
+			"_id" : "55f60467a0b3d22128b3b1cb",
+			"tasks" : [
+				{
+					"content" : "Try again",
+					"_id" : "55fb50b82810c3d71a8ac4de",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : true,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-17T23:46:00.972Z"
+				},
+				{
+					"content" : "Duration is goood",
+					"_id" : "5605a20b9edf86b30a26969e",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 1.5,
+					"timestamp" : "2015-09-25T19:35:39.467Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-13T23:19:03.304Z"
+		},
+		{
+			"name" : "Yay",
+			"_id" : "55f75404d3d8d69b426fa077",
+			"tasks" : [
+				{
+					"content" : "Long task",
+					"_id" : "5605a21b9edf86b30a26969f",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 9.5,
+					"timestamp" : "2015-09-25T19:35:56.058Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-14T23:11:00.387Z"
+		},
+		{
+			"name" : "Again",
+			"_id" : "55fb508d2810c3d71a8ac4db",
+			"tasks" : [
+				{
+					"content" : "Try this one",
+					"_id" : "55fb795d2a5fe34b608fd86b",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:39:25.475Z"
+				},
+				{
+					"content" : "TRy again",
+					"_id" : "55fb7a73d6e6ac0f686b972e",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:44:03.493Z"
+				},
+				{
+					"content" : "Another!!!!",
+					"_id" : "55fb7ab01bf1355a6985b2cf",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:45:04.829Z"
+				},
+				{
+					"content" : "WHY GOD",
+					"_id" : "55fb7b05c892a96c6b039b86",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:46:29.632Z"
+				},
+				{
+					"content" : "NOOOOO",
+					"_id" : "55fb7bc541ac4f1f6f195e8e",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T02:49:41.859Z"
+				},
+				{
+					"content" : "Working",
+					"_id" : "55fb7e4082ead9cb7cb21508",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 0.5,
+					"timestamp" : "2015-09-18T03:00:16.808Z"
+				},
+				{
+					"content" : "Tired",
+					"_id" : "55fb8660a4e6ac4ba8942eca",
+					"notes" : [ ],
+					"schedule" : [ ],
+					"isDeferred" : false,
+					"isCompleted" : false,
+					"priority" : 1,
+					"duration" : 3.5,
+					"timestamp" : "2015-09-18T03:34:56.512Z"
+				}
+			],
+			"isDeferred" : false,
+			"isCompleted" : false,
+			"isActive" : false,
+			"isStarted" : false,
+			"timestamp" : "2015-09-17T23:45:17.618Z"
+		}
+	],
+	"isDeferred" : false,
+	"isCompleted" : false,
+	"isAbandoned" : false,
+	"timestamp" : "2015-09-08T21:17:16.383Z",
+	"__v" : 509
+}
+]

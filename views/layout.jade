@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title Spearhead | Project Management Simplified
+
+        // Styles and Scripts
+        link(rel="stylesheet" href="/build/styles.css")
+        script(src="/build/head-scripts.js")
+        
+        // Load all the components
+        link(rel="import" href="/build/polymer.html")
+        link(rel="import" href="/build/elements.html")
+
+    body
+        nav
+            a(href="/")
+                img(src="/img/spearhead-logo.png").nav-logo
+
+        .container
+          block content
+
+        script(src="/build/body-scripts.js")
