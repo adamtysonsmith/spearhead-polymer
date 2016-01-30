@@ -12,19 +12,10 @@ var paths = {
   bodyScripts: [
     './public/js/*.js'
   ],
-  mainStyles: [
-    './public/sass/main.scss'
-  ],
   polymerLib: [
     './bower_components/polymer/polymer.html',
     './bower_components/polymer/polymer-mini.html',
     './bower_components/polymer/polymer-micro.html'
-  ],
-  polymerComponents: [
-    './elements/*/*.jade'
-  ],
-  componentStyles: [
-    './elements/*/*.scss'
   ]
 }
 
@@ -35,7 +26,7 @@ gulp.task('clean', function() {
 
 // Main Styles and Scripts
 gulp.task('main-styles', function() {
-  gulp.src(paths.mainStyles)
+  gulp.src('./public/sass/main.scss')
   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(concat('styles.css'))
   .pipe(gulp.dest('./public/build'));
@@ -60,14 +51,14 @@ gulp.task('polymer', function() {
 });
 
 gulp.task('polymer-components', function() {
-  gulp.src(paths.polymerComponents)
+  gulp.src('./elements/*/*.jade')
   .pipe(jade())
   .pipe(concat('elements.html'))
   .pipe(gulp.dest('./public/build'));
 });
 
 gulp.task('component-styles', function() {
-  gulp.src(paths.componentStyles)
+  gulp.src('./elements/*/*.scss')
   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(rename(function(path) {
     return path;
