@@ -8,7 +8,6 @@ var Controller  = require('./controllers/main.js');
 //var passport            = require('passport');
 //var passportConfig      = require('./config/passport');
 
-
 // Connect to spearhead database
 mongoose.connect('mongodb://localhost/spearhead_2');
 

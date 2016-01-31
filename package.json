@@ -19,6 +19,7 @@
     "gulp-sass": "^2.1.1",
     "jade": "^1.11.0",
     "lodash": "^4.0.1",
-    "mongoose": "^4.3.7"
+    "mongoose": "^4.3.7",
+    "serve-favicon": "^2.3.0"
   }
 }
