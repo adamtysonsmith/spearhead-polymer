@@ -1,23 +1,20 @@
 extends layout
 
 block content
-    projects-waterfall
-    stage-pipeline
-    iron-grid
-        .s6
-            p Hey im an s6 column
-        .s6
-            p Hey im an s6 column
+  section.bg-lt-blue
+    .container
+      iron-grid.home-header
+        .s6.home-title
+          h1 Get projects done on time.
+          hr
+          p Spearhead is a simple project management app that estimates project deadlines accurately.
+          a.btn-green(href="#") Get Started
 
-    .home-header
-        h1 Get projects done on time.
-        hr
-        p Spearhead is a simple project management app that estimates project deadlines accurately.
-        button Get Started
-        
-        .home-login-form
-            p some stuff
+        .s6.home-login-form
+          p Hey im going to be a paper form
 
-    .home-content
+  section.bg-default
+    .container
+      .home-content
         h2 No more missed deadlines
         p Avoid underestimating your workload and missing another deadline.  We know what happens when projects start to overlap and the tasks stack up.  You should be spending your weekend enjoying yourself, instead of catching up on work.

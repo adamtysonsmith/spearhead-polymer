@@ -1,0 +1,22 @@
+@import 'color';
+
+section {
+  padding: 40px 0px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.clear-nav {
+  margin-top: 65px;
+}
+
+.bg-default {
+  background-color: $superlight-blue;
+}
+
+.bg-lt-blue {
+  background-color: $light-blue;
+}

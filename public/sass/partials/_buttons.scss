@@ -1,0 +1,35 @@
+@import 'color';
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg,25%);
+  } 
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  line-height: 36px;
+  margin: 5px 0px;
+}
+
+.btn-blue {
+  @extend .btn;
+  @include button-bg($primary-btn);
+}
+
+.btn-green {
+  @extend .btn;
+  @include button-bg($secondary-btn);
+}

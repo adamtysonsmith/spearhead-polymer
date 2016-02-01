@@ -1,14 +1,16 @@
-$start: 3em;
+$start: 2em;
 
 @each $h in h1, h2, h3, h4, h5, h6 {
   #{$h} { 
     font-size: $start;
     font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 24px 0px;
   }
 
-  $start: $start - 0.5;
+  $start: $start - 0.2;
 }
 
 p, a {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 22px 0px;
 }

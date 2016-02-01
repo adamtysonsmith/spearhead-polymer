@@ -1,24 +1,27 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="utf-8")
-        title Spearhead | Project Management Simplified
-        link(rel="shortcut icon" type="image/png" href="/img/sp-favicon.png")
+  head
+    meta(charset="utf-8")
+    title Spearhead | Project Management Simplified
+    link(rel="shortcut icon" type="image/png" href="/img/sp-favicon.png")
 
-        // Styles and Scripts
-        link(rel="stylesheet" href="/build/styles.css")
-        script(src="/build/head-scripts.js")
-        
-        // Load web components
-        link(rel="import" href="/build/imports.html")
-        link(rel="import" href="/build/elements.html")
+    // Styles and Scripts
+    link(rel="stylesheet" href="/build/styles.css")
+    script(src="/build/head-scripts.js")
 
-    body
-        nav
-            a(href="/")
-                img(src="/img/spearhead-logo.png").nav-logo
+    // Load web components
+    link(rel="import" href="/build/imports.html")
+    link(rel="import" href="/build/elements.html")
 
-        .container
-          block content
+  body.bg-default
+    nav
+      a(href="/")
+        img(src="/img/spearhead-logo.png").nav-logo
 
-        script(src="/build/body-scripts.js")
+    .clear-nav
+      block content
+
+    script(src="/build/body-scripts.js")
+  
+  footer
+    p Copyright 2016 © Spearhead
