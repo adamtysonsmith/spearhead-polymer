@@ -21,7 +21,7 @@ gulp.task('clean', function() {
 
 // Main Styles and Scripts
 gulp.task('main-styles', function() {
-  return gulp.src('./public/sass/main.scss')
+  return gulp.src('./public/sass/app.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('styles.css'))
     .pipe(gulp.dest('./public/build'));

@@ -1,5 +1,3 @@
-@import 'color';
-
 @mixin button-bg($bg) {
   background: $bg;
   &:hover {

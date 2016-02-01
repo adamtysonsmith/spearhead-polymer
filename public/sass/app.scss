@@ -1,12 +1,16 @@
 // Reset Default Styles
-@import 'reset';
+@import 'partials/reset';
 
 // Typography
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import 'type';
+@import 'partials/type';
 
+// Partials
+@import 'partials/color';
 @import 'partials/layout';
 @import 'partials/buttons';
 @import 'partials/nav';
 @import 'partials/footer';
-@import 'partials/home/header';
+
+// Homepage
+@import 'home/header';
