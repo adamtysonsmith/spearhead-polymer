@@ -4,17 +4,45 @@ block content
   section.bg-lt-blue
     .container
       iron-grid.home-header
-        .s6.home-title
+        .s7.home-title
           h1 Get projects done on time.
           hr
           p Spearhead is a simple project management app that helps you to estimate project deadlines accurately.
           a.btn-green(href="#") Get Started
 
-        .s6.home-login-form
+        .s5.home-login-form
           p Hey im going to be a paper form
 
   section.bg-default
     .container
-      .home-content
-        h2 No more missed deadlines
-        p Avoid underestimating your workload and missing another deadline.  We know what happens when projects start to overlap and the tasks stack up.  You should be spending your weekend enjoying yourself, instead of catching up on work.
+      iron-grid.home-content
+        .s7
+          h2 No more missed deadlines
+          p Avoid underestimating your workload and missing another deadline.  We know what happens when projects start to overlap and the tasks stack up.  You should be spending your weekend enjoying yourself, instead of catching up on work.
+      
+      iron-grid
+        .s6 
+          div
+            .numbered-circle
+              span 1
+            h3 Break up your project into stages
+            img.numbered-circle-image(src="/img/stages.png")
+
+          div
+            .numbered-circle 
+              span 3
+            h3 Block out your schedule
+            img.numbered-circle-image(src="/img/schedule.png")
+          
+        .s6
+          div
+            .numbered-circle 
+              span 2
+            h3 Quickly estimate short-term tasks
+            img.numbered-circle-image(src="/img/tasks.png")
+          
+          div
+            .numbered-circle 
+              span 4
+            h3 See the big picture
+            img.numbered-circle-image(src="/img/waterfall.png")
