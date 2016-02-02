@@ -1,8 +1,47 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html"/><dom-module id="projects-waterfall"><style>h1{color:deeppink}
-</style><template><h1>Hey there!</h1></template><script>Polymer({
+<link rel="import" href="../../bower_components/polymer/polymer.html"/><link rel="import" href="../../bower_components/paper-input/paper-input.html"/><dom-module id="home-login"><style>:host {
+  /* Custom variable */
+  --sp-focus-color: #98daea;
+  
+  /* Paper input variables */
+  --paper-input-container-color: white;
+  --paper-input-container-focus-color: var(--sp-focus-color);
+}
+
+a {
+  text-align: center;
+  width: 50%;
+  margin: 30px auto;
+  display: block;
+  font-weight: 500;
+}
+
+.home-login-form {
+  width: 15%;
+  height: 344px;
+  padding: 10px 50px;
+  background-color: #00A1BE;
+  position: absolute;
+  top: 65px;
+  z-index: 1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+</style><template><div class="home-login-form"><p class="login-title">Login to Spearhead</p><paper-input label="Email" type="email"></paper-input><paper-input label="Password" type="password"></paper-input><a href="#" class="btn-white">Login</a></div></template><script>Polymer({
+  is: 'home-login'
+})</script></dom-module>
+<link rel="import" href="../../bower_components/polymer/polymer.html"/><dom-module id="projects-waterfall"><style></style><template><h1>Hey there!</h1></template><script>Polymer({
   is: 'projects-waterfall'
 });</script></dom-module>
-<link rel="import" href="../../bower_components/polymer/polymer.html"/><dom-module id="stage-pipeline"><style>h1{color:deeppink}
-</style><template><h1>Hey there! This is the stage pipeline component</h1></template><script>Polymer({
+<link rel="import" href="../../bower_components/polymer/polymer.html"/><dom-module id="stage-pipeline"><style></style><template><h1>Hey there! This is the stage pipeline component</h1></template><script>Polymer({
   is: 'stage-pipeline'
 });</script></dom-module>

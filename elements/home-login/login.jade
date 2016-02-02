@@ -1,0 +1,19 @@
+link(rel="import" href="../../bower_components/polymer/polymer.html")
+link(rel="import" href="../../bower_components/paper-input/paper-input.html")
+
+dom-module#home-login
+  style
+    include login.css
+
+  template
+    .home-login-form
+      p.login-title
+        | Login to Spearhead
+
+      paper-input(label="Email" type="email")
+      paper-input(label="Password" type="password")
+
+      a.btn-white(href="#") Login
+
+  script
+    include login.js

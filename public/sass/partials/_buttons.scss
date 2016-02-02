@@ -1,11 +1,11 @@
 @mixin button-bg($bg) {
   background: $bg;
   &:hover {
-    background: darken($bg,8%);
+    background: darken($bg, 8%);
     transition: all 0.3s ease;
   }
   &:active {
-    background: darken($bg,25%);
+    background: darken($bg, 25%);
   } 
 }
 
@@ -30,4 +30,14 @@
 .btn-green {
   @extend .btn;
   @include button-bg($secondary-btn);
+}
+
+.btn-white {
+  @extend .btn;
+  background: white;
+  color: $navy-blue;
+  &:hover {
+    background: $light-blue;
+    transition: all 0.3s ease;
+  }
 }

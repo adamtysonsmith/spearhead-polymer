@@ -46,18 +46,12 @@ gulp.task('polymer-imports', () => {
 });
 
 gulp.task('polymer-components', () => {
-  return gulp.src('./elements/*/*.jade')
+  return gulp.src('./elements/**/*.jade')
     .pipe(jade())
     .pipe(concat('elements.html'))
     .pipe(gulp.dest('./public/build'));
 });
 
-gulp.task('component-styles', () => {
-  return gulp.src('./elements/*/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(rename(path => path))
-    .pipe(gulp.dest('./elements'));
-});
 
 gulp.task('default', [
   'clean',
@@ -65,6 +59,5 @@ gulp.task('default', [
   'head-scripts',
   'body-scripts',
   'polymer-imports',
-  'polymer-components',
-  'component-styles'
+  'polymer-components'
 ]);

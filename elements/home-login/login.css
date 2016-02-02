@@ -1,32 +1,31 @@
-.home-header {
-  background-color: $light-blue;
+:host {
+  /* Custom variable */
+  --sp-focus-color: #98daea;
+  
+  /* Paper input variables */
+  --paper-input-container-color: white;
+  --paper-input-container-focus-color: var(--sp-focus-color);
 }
 
-.home-title {
-  p { 
-    font-size: 22px; 
-    font-weight: 300;
-  }
+a {
+  text-align: center;
+  width: 50%;
+  margin: 30px auto;
+  display: block;
+  font-weight: 500;
 }
 
 .home-login-form {
   width: 15%;
   height: 344px;
   padding: 10px 50px;
-  background-color: $aqua-blue;
+  background-color: #00A1BE;
   position: absolute;
   top: 65px;
   z-index: 1;
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
   clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
   
-  a {
-    text-align: center;
-    width: 50%;
-    margin: 30px auto;
-    display: block;
-    font-weight: 500;
-  }
 }
 
 .login-title {
