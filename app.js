@@ -1,18 +1,20 @@
-var express     = require('express');
-var bodyParser  = require('body-parser');
-var mongoose    = require('mongoose');
+'use strict';
 
-var Controller  = require('./controllers/main.js');
-//var cookieParser        = require('cookie-parser');
-//var session             = require('express-session');
-//var passport            = require('passport');
-//var passportConfig      = require('./config/passport');
+const express     = require('express');
+const bodyParser  = require('body-parser');
+const mongoose    = require('mongoose');
+
+const Controller  = require('./controllers/main.js');
+//const cookieParser        = require('cookie-parser');
+//const session             = require('express-session');
+//const passport            = require('passport');
+//const passportConfig      = require('./config/passport');
 
 // Connect to spearhead database
 mongoose.connect('mongodb://localhost/spearhead_2');
 
 // Express Config
-var app = express();
+const app = express();
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
@@ -68,8 +70,8 @@ app.get('/', Controller.index);
 //app.delete('/api/projects/:id/stages/:stageid/tasks/:taskid/notes/:noteid', apiController.deleteNote);
 
 // Server
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-var server = app.listen(port, function() {
+const server = app.listen(port, function() {
     console.log('Express server listening on port:', port);
 });

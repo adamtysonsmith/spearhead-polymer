@@ -1,7 +1,7 @@
-var data = require('../mock-data.json');
+'use strict';
+
+let data = require('../mock-data.json');
 
 module.exports = {
-  index: function(req, res, next) {
-    res.render('index', { data: data });
-  }
+  index: (req, res, next) => res.render('index', { data: data })
 }

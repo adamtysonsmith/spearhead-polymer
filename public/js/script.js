@@ -1,3 +1,1 @@
-(function() {
-  console.log('Body scripts loaded..')
-})();
+(() => console.log('Body scripts loaded..'))();
