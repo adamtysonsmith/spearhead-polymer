@@ -12,6 +12,7 @@ const paths = {
     './public/bower_components/webcomponentsjs/webcomponents-lite.min.js'
   ],
   bodyScripts: [
+    './public/bower_components/jquery-2.2.0.min/index.js',
     './public/js/*.js'
   ]
 }

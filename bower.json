@@ -20,6 +20,7 @@
     "polymer": "Polymer/polymer#^1.2.0",
     "iron-grid": "*",
     "paper-input": "PolymerElements/paper-input#^1.0.0",
-    "iron-media-query": "PolymerElements/iron-media-query#^1.0.0"
+    "iron-media-query": "PolymerElements/iron-media-query#^1.0.0",
+    "jquery-2.2.0.min": "http://code.jquery.com/jquery-2.2.0.min.js"
   }
 }

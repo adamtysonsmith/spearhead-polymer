@@ -8,10 +8,18 @@ block content
           h1 Get projects done on time.
           hr
           p Spearhead is a simple project management app that helps you to estimate project deadlines accurately.
-          a.btn-green(href="#") Get Started
+          a#create-account-btn.btn-green(href="#") Get Started
 
         .s5
           home-login
+
+      #create-account-form
+        h2 Create an Account - It's free!
+        .form-container
+          paper-input(label="Email" type="email")
+          paper-input(label="Password" type="password")
+          paper-input(label="Confirm Password" type="password")
+        a.btn-green(href="#") Create Account
 
   section.bg-default
     .container
