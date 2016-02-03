@@ -15,11 +15,11 @@ block content
 
       #create-account-form
         h2 Create an Account - It's free!
-        .form-container
-          paper-input(label="Email" type="email")
-          paper-input(label="Password" type="password")
-          paper-input(label="Confirm Password" type="password")
-        a.btn-green(href="#") Create Account
+        form.form-container(action="/auth/signup" method="POST")
+          paper-input(label="Email" type="email" name="email")
+          paper-input(label="Password" type="password" name="password")
+          paper-input(label="Confirm Password" type="password" name="passwordCheck")
+          button.btn-green(type="submit") Create Account
 
   section.bg-default
     .container
@@ -54,3 +54,6 @@ block content
               span 4
             h3 See the big picture
             img.numbered-circle-image(src="/img/waterfall.png")
+
+  footer
+    p Copyright 2016 © Spearhead

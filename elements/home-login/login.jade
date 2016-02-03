@@ -6,14 +6,14 @@ dom-module#home-login
     include login.css
 
   template
-    .home-login-form
+    form.home-login-form(action="/auth/login" method="POST")
       p.login-title
         | Login to Spearhead
 
-      paper-input(label="Email" type="email")
-      paper-input(label="Password" type="password")
+      paper-input(label="Email" type="email" name="username")
+      paper-input(label="Password" type="password" name="password")
 
-      a.btn-white(href="#") Login
+      button.btn-white(type="submit") Login
 
   script
     include login.js

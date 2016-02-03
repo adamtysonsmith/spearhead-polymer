@@ -1,14 +1,17 @@
 'use strict';
 
-const express     = require('express');
-const bodyParser  = require('body-parser');
-const mongoose    = require('mongoose');
+const express       = require('express');
+const session       = require('express-session');
+const bodyParser    = require('body-parser');
+const cookieParser  = require('cookie-parser');
+const mongoose      = require('mongoose');
 
-const Controller  = require('./controllers/main.js');
-//const cookieParser        = require('cookie-parser');
-//const session             = require('express-session');
-//const passport            = require('passport');
-//const passportConfig      = require('./config/passport');
+const passport      = require('passport');
+const passportLocal = require('./config/passport.js');
+
+const MainController  = require('./controllers/main.js');
+const AuthController  = require('./controllers/authenticate.js');
+const APIController   = require('./controllers/api.js');
 
 // Connect to spearhead database
 mongoose.connect('mongodb://localhost/spearhead_2');
@@ -18,42 +21,42 @@ const app = express();
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// app.use(cookieParser());
+app.use(cookieParser());
 
 // Express Session
-//app.use(session({
-//	secret: 'super secret app secret dont tell',
-//	resave: false,
-//	saveUninitialized: false
-//}));
+app.use(session({
+  secret: 'super secret app secret dont tell',
+  resave: false,
+  saveUninitialized: false
+}));
 
 // Passport Middleware
 // Initialize passport & passport session management
-//app.use(passport.initialize());
-//app.use(passport.session());
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 // Publicly accessible routes
-app.get('/', Controller.index);
+app.get('/', MainController.index);
 
 // Login and Logout
-//app.get('/auth/login', authController.login);
-//app.get('/auth/logout', authController.logout);
+app.get('/auth/login', AuthController.login);
+app.get('/auth/logout', AuthController.logout);
 
 // Submitting & creating logins
-//app.post('/auth/login', authController.processLogin);
-//app.post('/auth/signup', authController.processSignup);
+app.post('/auth/login', AuthController.processLogin);
+app.post('/auth/signup', AuthController.processSignup);
 
 
 // Middleware for authenication check
 // Any routes below this middleware will be redirected if not authenticated
-//app.use(passportConfig.ensureAuthenticated);
+app.use(passportLocal.ensureAuthenticated);
 
 // Authenticated routes
-//app.get('/dashboard', indexController.app);
-//app.get('/projects', indexController.app);
+app.get('/dashboard', MainController.app);
+app.get('/projects', MainController.app);
 //app.get('/ng-views/:templateName', templateController.ngview);
 //app.get('/partials/:partialName', templateController.partial);
 

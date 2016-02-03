@@ -36,7 +36,7 @@ a {
   margin-top: 50px;
   margin-bottom: 0px;
 }
-</style><template><div class="home-login-form"><p class="login-title">Login to Spearhead</p><paper-input label="Email" type="email"></paper-input><paper-input label="Password" type="password"></paper-input><a href="#" class="btn-white">Login</a></div></template><script>Polymer({
+</style><template><form action="/auth/login" method="POST" class="home-login-form"><p class="login-title">Login to Spearhead</p><paper-input label="Email" type="email" name="username"></paper-input><paper-input label="Password" type="password" name="password"></paper-input><button type="submit" class="btn-white">Login</button></form></template><script>Polymer({
   is: 'home-login'
 })</script></dom-module>
 <link rel="import" href="../../bower_components/polymer/polymer.html"/><dom-module id="projects-waterfall"><style></style><template><h1>Hey there!</h1></template><script>Polymer({
