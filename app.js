@@ -57,8 +57,6 @@ app.use(passportLocal.ensureAuthenticated);
 // Authenticated routes
 app.get('/dashboard', MainController.app);
 app.get('/projects', MainController.app);
-//app.get('/ng-views/:templateName', templateController.ngview);
-//app.get('/partials/:partialName', templateController.partial);
 
 // Authenticated API Routes
 //app.get('/api/projects', apiController.readProject);
