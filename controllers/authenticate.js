@@ -1,5 +1,4 @@
 'use strict';
-
 const passport = require('passport');
 const User     = require('../models/user.js');
 
@@ -82,7 +81,7 @@ const authController = {
             // this means that one of our fields marked as "unique"
             // failed to validate on this object.
             if (err.code === 11000) {
-              errorMessage = 'This user already exists.';
+              errorMessage = 'This user already exists. \n';
             }
 
             // Log the error and redirect

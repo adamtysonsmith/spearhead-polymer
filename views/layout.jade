@@ -17,6 +17,8 @@ html(lang="en")
     nav
       a(href="/")
         img(src="/img/spearhead-logo.png").nav-logo
+      if userLoggedIn
+        a.nav-link(href="/auth/logout") Logout
 
     .clear-nav
       block content
