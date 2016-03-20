@@ -1,4 +1,18 @@
 extends layout
 
 block content
-  h1 You have been redirected to the login page
+  div.login-container
+    div.login
+      h2 Login to Spearhead
+      form(action="/auth/login" method="POST")
+        paper-input(label="Email" type="email" name="username")
+        paper-input(label="Password" type="password" name="password")
+        button.btn-green(type="submit") Login
+
+    div.login-create
+      h2 Create New Account
+      form(action="/auth/signup" method="POST")
+        paper-input(label="Email" type="email" name="email")
+        paper-input(label="Password" type="password" name="password")
+        paper-input(label="Confirm Password" type="password" name="passwordCheck")
+        button.btn-green(type="submit") Create Account

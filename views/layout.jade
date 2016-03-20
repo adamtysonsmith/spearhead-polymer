@@ -12,15 +12,27 @@ html(lang="en")
     // Load web components
     link(rel="import" href="/build/imports.html")
     link(rel="import" href="/build/elements.html")
-
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    
   body.bg-default
-    nav
+    nav.top-nav
       a(href="/")
         img(src="/img/spearhead-logo.png").nav-logo
       if userLoggedIn
         a.nav-link(href="/auth/logout") Logout
 
-    .clear-nav
-      block content
+    if userLoggedIn
+      nav.side-nav
+        a(href="/dashboard")
+          i.material-icons.nav-icon view_quilt
+        a(href="/projects")
+          i.material-icons.nav-icon sort
+
+    if userLoggedIn
+      .clear-side-nav
+        block content
+    else
+      .clear-nav
+        block content
 
     script(src="/build/body-scripts.js")

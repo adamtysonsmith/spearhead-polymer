@@ -1,4 +1,4 @@
-nav {
+.top-nav {
   position: fixed;
   background-color: $navy-blue;
   width: 100%;
@@ -13,7 +13,7 @@ nav {
   .nav-logo:hover {
     opacity: 0.8;
   }
-  
+
   .nav-link {
     float: right;
     padding-right: 30px;
@@ -23,6 +23,24 @@ nav {
     text-decoration: none;
   }
   .nav-link:hover {
+    opacity: 0.8;
+  }
+}
+
+.side-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 65px;
+  padding-top: 85px;
+  background-color: $deep-blue;
+  
+  .nav-icon {
+    font-size: 48px;
+    color: whitesmoke;
+    margin-left: 8px;
+  }
+  .nav-icon:hover {
     opacity: 0.8;
   }
 }
