@@ -1,0 +1,13 @@
+:host {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+:host ::content .tick ::content line {
+  stroke-width: 1;
+  stroke: lightgrey;
+  opacity: 0.3;
+}
+
+:host ::content .grid ::content path {
+  stroke-width: 0;
+}

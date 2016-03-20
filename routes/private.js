@@ -4,7 +4,7 @@ const PrivateController = require('../controllers/private');
 // Authenticated Routes
 module.exports = app => {
   app.get('/dashboard', PrivateController.app);
-  app.get('/projects', PrivateController.app);
+  app.get('/projects', PrivateController.getProjects);
 }
 
 // Old Authenticated API Routes

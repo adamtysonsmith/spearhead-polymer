@@ -1,13 +1,26 @@
 :host {
   /* Custom variable */
   --sp-focus-color: #98daea;
-
+  --sp-bg-color: #00A1BE;
+    
   /* Paper input variables */
   --paper-input-container-color: white;
   --paper-input-container-focus-color: var(--sp-focus-color);
 }
 
-a {
+:host ::content .home-login-form {
+  width: 15%;
+  height: 344px;
+  padding: 10px 50px;
+  background-color: var(--sp-bg-color);
+  position: absolute;
+  top: 65px;
+  z-index: 1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+:host ::content button {
   text-align: center;
   width: 50%;
   margin: 30px auto;
@@ -15,20 +28,7 @@ a {
   font-weight: 500;
 }
 
-.home-login-form {
-  width: 300px;
-  height: 344px;
-  padding: 10px 50px;
-  background-color: #00A1BE;
-  position: absolute;
-  top: 65px;
-  z-index: 1;
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
-
-}
-
-.login-title {
+:host ::content .login-title {
   font-size: 28px;
   font-weight: 300;
   color: white;

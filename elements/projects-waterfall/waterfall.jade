@@ -1,9 +1,14 @@
 link(rel="import" href="../../bower_components/polymer/polymer.html")
 
 dom-module#projects-waterfall
-  style
-    include waterfall.css
+
   template
-    h1 Hey there!
+    style
+      include waterfall.css
+    h1 Your Projects
+    svg#waterfall
+
   script
+    include ../../public/bower_components/d3/d3.js
+    include d3-waterfall.js
     include waterfall.js

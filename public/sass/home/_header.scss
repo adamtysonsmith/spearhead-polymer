@@ -9,35 +9,6 @@
   }
 }
 
-.home-login-form {
-  width: 15%;
-  height: 344px;
-  padding: 10px 50px;
-  background-color: $aqua-blue;
-  position: absolute;
-  top: 65px;
-  z-index: 1;
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  
-  button {
-    text-align: center;
-    width: 50%;
-    margin: 30px auto;
-    display: block;
-    font-weight: 500;
-  }
-}
-
-.login-title {
-  font-size: 28px;
-  font-weight: 300;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 0px;
-}
-
 #create-account-form {
   h2 {
     margin: 10px 0px;
