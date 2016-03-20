@@ -1,11 +1,19 @@
 link(rel="import" href="../../bower_components/polymer/polymer.html")
+link(rel="import" href="../../bower_components/paper-input/paper-input.html")
 
 dom-module#projects-waterfall
 
   template
     style
       include waterfall.css
+      
     h1 Your Projects
+    button.btn-green Add Project
+    
+    div#date-selection
+      paper-input(type="date" label="Start Date" value="{{start::input}}")
+      paper-input(type="date" label="End Date" value="{{end::input}}")
+
     svg#waterfall
 
   script

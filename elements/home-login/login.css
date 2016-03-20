@@ -9,7 +9,7 @@
 }
 
 :host ::content .home-login-form {
-  width: 15%;
+  width: 300px;
   height: 344px;
   padding: 10px 50px;
   background-color: var(--sp-bg-color);
